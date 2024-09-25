@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* PC、スマホ共通スタイル
+-------------------------------------- */
+body{
+	font-family: 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+}
+p{
+	font-size: 18px;
+}
+img{
+	margin: 0 auto;
+	max-width: 100%;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li{
+	line-height: 1.8;
+}
+section{
+	clear: both;
+}
+/*================
+	PC用のスタイル 
+=================*/
+/* 横幅設定
+-------------------------------------- */
+
+
+body{
+	/* 要素の幅 最大1080px */
+	max-width: 1080px;
+
+	margin: 20px auto 40px auto;
+	padding: 0;
+}
+
+/* footer
+-------------------------------------- */
+#footer{
+	clear: both;
+	text-align: center;
+	padding: 100px 0 0 0;
+}
+
+/* header
+-------------------------------------- */
+/* ナビゲーションのレイアウト
+-------------------------------------- */
+header{
+	text-align: center;
+}
+/* ナビゲーションのリンクの装飾設定
+-------------------------------------- */
+#mainnav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px 0 40px 0;
+}
+#mainnav a{
+	text-decoration: none;
+	padding: 0 5px 0 5px;
+}
+#mainnav a:link{
+	color: gray;
+}
+#mainnav a:visited{
+	color: gray;
+}
+#mainnav a:hover{
+	color: gold;
+	text-decoration: underline;
+}
+#mainnav a:active{
+	color: #ec4eb7;
+}
+/* mainImg
+-------------------------------------- */
+#mainImg{
+	width: 100%;
+	height: auto;
+	padding: 30px 0 0 0;
+}
+/* head-border
+-------------------------------------- */
+.head-border{
+	font-family: "Pacifico", cursive;
+	font-size: 35px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 80px 0 50px 0;
+	font-weight: normal;
+	display: flex;
+  align-items: center;
+}
+.head-border:before,
+.head-border:after {
+    content: "";
+    height: 2px;
+    flex-grow: 1;
+    background-color: #ec4eb7;
+}
+.head-border:before {
+    margin-right: 1rem;
+}
+.head-border:after {
+    margin-left: 1rem;
+}
+
+/* SEC01 Message
+-------------------------------------- */
+h1{
+	margin: 0;	
+}
+.inner{
+	width: 75%;
+	margin: 0 auto;
+}
+.innerS{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* SEC02 Gallery
+-------------------------------------- */
+#gallery{
+	margin: 0;
+	padding: 0;
+}
+#gallery li{
+	float: left;
+	width: calc(100%/3);
+	line-height: 0;
+}
+#gallery img{
+	width: 100%;
+	height: auto;
+}
+/* SEC03 About
+-------------------------------------- */
+#about-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+}
+.about{
+	display: flex;
+	align-items: center;
+}
+.circle{
+	border-radius: 50%;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border: 3px solid #999;
+}
+.content{
+	width: 60%;
+	margin: 0 auto;
+	padding: 0 0 0 31px;
+}
+.content li::before {
+	content: "◆ ";
+	color: #ec84c9;
+}
+/* SEC07 Company
+-------------------------------------- */
+#company-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+}
+.company{
+	padding: 0 10px 0 10px;
+	width: 50%;
+}
+.map{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: auto;		
+}
+.forms{
+	border-bottom: 1px double gray;
+}
+.forms::before {
+	content: "🥀 ";
+	color: #ec84c9;
+}
+#sns{
+	text-align: left;
+}
+#sns a:hover img{
+	opacity: .8;
+}
+
+/* SEC04/05/06 SERVICE/PORTFOLIO/BLOG
+------------------------------------------------------------*/
+/* SEC04 SERVICE
+-------------------------------------- */
+#service-flex{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 0 auto;
+}
+.service{
+	width: 45%;
+}
+.service .img {
+	padding: 50px 50px;
+	background: #f6f6f6;
+}
+.service p{
+	padding: 10px;
+}
+.service ol{
+	font-size: 16px;
+	padding: 10px 10px 10px 10px;
+}
+h4{
+	margin-bottom: 10px;
+	color: grey;
+}
+/* SEC05 PORTFOLIO
+-------------------------------------- */
+.portfolio{
+	margin: 0;
+	padding: 0;
+}
+.portfolio li {
+	float: left;
+
+	width: calc(90%/3);
+	padding: 0px 8px 0 8px;
+} 
+.portfolio li p{
+	margin-top: 0;
+	padding: 0 0 0 20px;	
+}
+.portfolio img{
+	width: 100%;
+	height: auto;
+}
+.portfolio .img{
+	border-radius: 8%;
+	padding: 10px 10px;
+	background: rgb(255, 255, 214);
+}
+/* SEC06 Blog
+-------------------------------------- */
+#sea{
+	clear: both;
+	/* 背景画像の固定（fixed） */
+	background: url(../images/28841059_m.jpg) no-repeat 100% 100% fixed;
+	/* 元画像の縦横比は保持して、要素をちょうどよく覆うサイズにしてくれます。 */
+	background-size: cover;
+}
+#cosmos{
+	padding: 0 0 50px 0;
+}
+.topic-hiking::before {
+  content: '⛅';
+}
+.topic-lunch::before {
+  content: '☕';
+}
+.topic-sightseeing::before {
+  content: '🌸';
+}
+.blog{
+	margin: 0;
+	padding: 0;
+}
+.blog li{
+	float: left;
+	width: calc(90%/3);
+	padding: 0px 8px 0 8px;
+}
+.blog li p{
+	margin-top: 0;
+}
+.blog img{
+	width: 100%;
+	height: auto;
+}
+.blog .img{
+	border-radius: 20%;
+	padding: 50px 50px;
+	background: #f6f6f6;
+}
+
+/*================
+	PC用のスタイル 
+=================*/
+@media only screen and (max-width: 640px){
+	#gallery li{
+		float: none;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 640px){
+	#service-flex{
+		display: block;
+		margin: 0 auto;
+	}
+	.service{
+		width: 100%;
+	}
+	}
+@media only screen and (max-width: 640px){
+	.portfolio li{
+			float: none;
+			width: 100%;
+		}
+	.portfolio{
+			padding: 0 50px 0 50px;
+		}
+	}
+@media only screen and (max-width: 640px){
+.blog li{
+		float: none;
+		width: 100%;
+	}
+.blog{
+		padding: 0 50px 0 50px;
+	}
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
